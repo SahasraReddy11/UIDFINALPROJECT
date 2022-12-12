@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+	<title>Cyber Nation</title>
+	<style>
+		.reg{
+  height: 100px;
+  width: 1280px;
+  background-color: #C60473;
+}
+h1{
+	font-family: Lucida Handwriting;
+	position: relative;
+}
+input[type=text], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=file], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label {
+        display: inline-block;
+        width: 250px;
+      }
+
+.column {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+.column {
+  float: left;
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	<table width="1280px">
+		<tr>
+			<th width="200px"><img src="amritalogo.jpg" width="200px" height="80px"></th>
+			<th><h1>Amrita Cyber Nation(ACN 2022)</h1></th>
+		</tr>		
+	</table>
+
+	<h2 align="center">1st October 2022</h2>
+	<h2 align="center">AMRITA CYBER CONCLAVE</h2>
+	<img src="amrita.jpg" width="1250px" height="400px">
+
+
+	<div class="reg"><h1 align="center">REGISTRATION <br>FORM</h1></div>
+	<br>
+	
+	<div class="row">
+  <div class="column">
+    <label for="name"><b>Name</b></label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      <br>
+
+  <label for="number"><b>Phone Number</b></label>
+        <input type="text" id="number" pattern="[0-9]{10}" required />
+      <br>
+
+  <label for="email"><b>Email</b></label>
+        <input type="text" id="email" placeholder="eg:abc@gmail.com" required>
+      <br>
+
+  <label for="age"><b>Password</b></label>
+        <input type="Password" id="password" name="password" required>
+        <br>
+
+  <label for="org"><b>Organization</b></label>
+        <input type="text" id="org" name="org" >
+        <br>
+        <br>
+        <b>Upload your Qualification:</b>
+		<input type="file" name="upload" id="fileupload"><br><br>
+
+   <label for="dob"><b>Date of Birth</b></label>
+      <input type="date" id="dob" name="date" min="1980-01-01" max="2007-12-31">
+      <br><br>
+
+  <b>Department</b><br>
+
+  <input type="radio" name="course" id="cse">
+    <label for="cse">Computer science</label>
+    <br>
+    <input type="radio" name="course" id="CYS">
+    <label for="CYS">Cyber Security</label> 
+    <br>
+    <input type="radio" name="course" >
+    <label for="AI">Artificial Intelligence</label><br>
+    <input type="radio" name="course" >
+    <label for="ECE">ECE</label><br><br>
+
+
+    <label for="designation"><b>Designation </b></label><br>
+    <select name="designation" id="designation">
+      <option value="none" selected disabled hidden>Select your Designation</option>
+      <option value="Faculty">Faculty member</option>
+      <option value="scholar">Research Scholar </option>
+      <option value="Industry ">Industry Person</option>
+      <option value="other">others</option>
+    </select><br>
+
+
+    <h3><b>Registering for</b><br></h3>
+    <input type="checkbox" name="event" id="conclave">
+    <label for="conclave">Cyber Conclave(1st Oct, 2022)</label>
+    <br>
+    <input type="checkbox" name="event" id="meet">
+    <label for="meet">Industry Meet ( 8th Oct, 2022)</label> 
+    <br>
+    <input type="checkbox" name="Fest" >
+    <label for="Fest">Cyber Tech Fest (30th Oct, 2022)</label>
+    <br><br><br>
+
+    Experience in coding:
+		<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="Range">
+</div>
+    <br><br>
+
+
+    <label for="area"><b>Feedback on Organizing events:</b></label>
+    <textarea rows="4" cols="50" name="area" id="area"></textarea><br><br>
+
+    <input type="submit" name="submit">
+
+		<input type="reset" name="reset"><br><br>
+  </div>
+
+  <div class="column">
+    <br>
+    <br>
+    <br>
+<fieldset>
+    <table width="400px" >
+      <tr>
+        <th>Registration Fees</th>
+        <th>(per day)</th>
+      </tr>
+      <tr>
+        <td>Students</td>
+        <td>200/-</td>
+      </tr>
+      <tr>
+        <td>Research Scholars</td>
+        <td>500/-</td>
+      </tr>
+      <tr>
+        <td>Industries</td>
+        <td>1000/-</td>
+      </tr>
+    </table></fieldset>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <fieldset>
+    	<table width="500px" ><tr>
+    		<th width="150px">Time</th>
+    		<th>Event</th>
+    	</tr>
+<tr>
+	<td >Panel 1</td>
+	<td>Cyber Threats:An emerging global challenge</td>
+</tr>
+<tr>
+	<td >Panel 2</td>
+	<td>Technological Solutions and directions to secure Cyberspace</td>
+</tr>
+<tr>
+	<td >Panel 3</td>
+	<td>Role of Academia in Strengthening Cyber security</td>
+</tr>
+    </table>
+    </fieldset>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+
+    <fieldset><h2>For more Details,Please Contact</h2>
+    			<b>Dr.Mrs.A.G.Sreedevi</b><br>
+    			Head,Cyber Security Program<br>
+    			Amrita School of Computing<br>
+    			Chennai Campus<br>
+    			Email:proogheadcys@ch.amrita.edu
+    			<b>Phone: +914435533249</b>
+
+    		</fieldset>
+
+  </div>
+
+</div>
+<center><h2>For more information<br>Please scan the QR CODE</h2>
+   <img src="https://chart.googleapis.com/chart?cht=qr&chs=210x210&chl=https://www.amrita.edu/events/amrita-cybernation-2022/"></center>
+   <a href="../index.html">Back to Index page</a>
+</body>

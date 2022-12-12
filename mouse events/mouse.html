@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<title>Mouse Events</title>
+	<script type="text/javascript">
+		function changeColor(color){
+			document.querySelector('.change').style.color = color;
+		}
+		function down(){
+			document.getElementById("para").innerHTML="Mouse Pressed";
+		}
+		function up(){
+			document.getElementById("para").innerHTML="Mouse Released";
+		}
+		function newimg() {
+			document.getElementById("img1").src="open.png";
+		}
+		function oldimg() {
+			document.getElementById("img1").src="closed.png";
+		}
+	</script>
+</head>
+<body>
+	<h1 class="change">Click below buttons to see change in color(onclick event)</h1>	
+	<button onclick="changeColor('Red')">RED</button>
+	<button onclick="changeColor('Green')">GREEN</button>
+	<button onclick="changeColor('blue')">BLUE</button>
+
+	<h1 onmousedown="down()" onmouseup="up()" id="para">Click me to see Onmouseup() and onmousedown() events</h1>
+
+	<h1>Hover on the image to change (Onmouseout() and onmouseover() events)</h1>
+	<img id="img1" src="closed.png" onmouseover="newimg()"  onmouseout="oldimg()">
+	<br>
+	<a href="../index.html">Back to Index page</a>
+	
+
+</body>

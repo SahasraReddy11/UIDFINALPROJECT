@@ -1,0 +1,106 @@
+.header{
+    display:flex;
+    float:left;
+}
+h1{
+
+    padding-left: 300px;
+}
+h1{
+    text-align: center;
+}
+h1{
+font-family: Bahnschrift Light;
+position: relative;
+}	
+	
+body {margin:0;}
+
+ul {
+list-style-type: none;
+margin:0;
+padding: 0px;
+overflow: hidden;
+background-color: #A4123F;
+
+top: 100px;
+width: 100%;
+font-size: 20px;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: white;
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+}
+
+table,
+td,
+tr {
+    padding: 12px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+}
+
+th {
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: #9CD1E3;
+}
+td:hover {
+    background:#9CD1E3;
+}
+.industry{
+    text-align: center;
+}
+.container{
+    position:absolute;
+    top:160%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding:30px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background: url(logo_circle.png);
+    border-radius: 50%;
+    float:left;
+    shape-outside: circle();
+    margin: 60px 30px 30px 0;
+    background-repeat: no-repeat;
+    
+}
+p{
+    font-size: x-large;
+}

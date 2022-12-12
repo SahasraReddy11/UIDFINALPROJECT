@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <style type="text/css">
+            input[type=submit]{
+                padding:15px 25px;
+                margin:8px 0;
+                display:inline-block;
+                border:1px solid #000000;
+                border-radius: 6px ;
+                box-sizing: border-box;
+                padding-left:20px;
+                background:black;
+                font-size: 20px;
+                color: white;
+            }
+            input[type=text]{
+                padding:15px 20px;
+                margin:8px 0;
+                display:inline-block;
+                border:1px solid #000000;
+                border-radius: 4px ;
+                box-sizing: border-box;
+                padding-left:20px;
+            }
+            input[type=password]{
+                padding:15px 20px;
+                margin:8px 0;
+                display:inline-block;
+                border:1px solid #000000;
+                border-radius: 4px ;
+                box-sizing: border-box;
+                padding-left:20px;
+            }
+            h1{
+                font-family: sans-serif;
+                display: inline-block;
+             width: 250px;
+             padding-left: 30px;
+      
+            }
+            .ert{
+                padding-top:60px;
+                margin: 120px auto;
+                max-width:  500px;
+                width: 100%;
+                background: rgba(244, 162, 162, 0.59);
+                border-radius: 17px;
+    
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="ert">
+        <form method="post" onsubmit="return formval()" name="login">
+            <center><h1>LOGIN</h1></center>
+            <h1>Email: </h1><input type="text" name="mail" id="mail" required>
+            <br>
+            <h1>Password: </h1><input type="password" name="password" id="password" required>
+            <br><br>
+            <center><input type="submit" value="submit"></center>
+        </form>
+        </div>
+        <a href="../index.html">Back to Index page</a>
+        <script>
+            function formval(){
+                let x=document.forms["login"]["mail"].value;
+                let y=document.forms["login"]["password"].value;
+                console.log(x);
+                console.log(y);
+                var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (x.match(validRegex)) { 
+                      
+                } else {   
+                    alert("Invalid email address!");    
+                    
+                 }
+                
+                var validRegex1= /^(?=[A-Z0-9]*[a-z])(?=[a-zA-Z]*[0-9])(?=[a-z0-9]*[A-Z])[a-zA-Z0-9]{8,}$/;
+                if (y.match(validRegex1)){                    
+                
+                }else{
+                    alert("enter atleast 8 letters with 1 uppercase and lower case");
+                    
+                }
+                if(x.match(validRegex) && y.match(validRegex1)){
+                    document.write("success") ;
+                }
+            }
+        </script>
+    </body>
+</html>
