@@ -1,0 +1,115 @@
+		.symposium{
+			width: 1200px;
+			height: 500px;
+			background-image: url('symp.jpg');
+			background-repeat: no-repeat;
+			background-size: 1200px 500px;
+			
+		}
+		img{
+			border-radius: 50%;
+		}
+		.logo{
+			font-size: 30px;
+			font-family: Georgia;
+			font-weight: 30px;
+
+		}
+		h1{
+			padding-top: 100px;
+			padding-left: 20px;
+			color: White;
+			font-size: 35px;
+			font-family: Georgia;
+			font-weight: 50px;
+		}
+			.navbar ul{
+    list-style: none;
+    overflow: hidden;
+    background-color: #FD0589;
+}
+.navbar li{
+    float:left;
+}
+.navbar li a{
+    display: block;
+    color: white ;
+    font-size: 20px ;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: white;
+    color:#FD0589;
+}
+		.some{
+			padding-left: 20px;
+			font-size: 20px;
+			color: white;
+			font-weight: 25px;
+		}
+		h2{
+			padding-left:20px ;
+		}
+		video{
+			padding-top: 80px;
+			padding-left: 80px;
+		}
+		button{
+			background:#FD0589 ;
+			padding: 15px;
+			border-radius: 20px;
+			margin-top: 2px ;
+			margin-left: 20px;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.button span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+
+		.button span:after {
+		  content: '\00bb';
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.5s;
+		}
+
+		.button:hover span {
+		  padding-right: 25px;
+		}
+
+		.button:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		}
+
+		.left {
+		  float: left;
+		  width: 50%;
+		}
+		.symposium:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		.symposium {
+		  display: flex;
+		}
+
+		.left {
+		  flex: 50%;
+		}
+		.left {
+		  float: left;
+		}
+		

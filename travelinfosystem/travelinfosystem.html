@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+.navbar ul{
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(5, 68, 104);
+}
+.navbar li{
+    float:left;
+}
+.navbar li a{
+    display: block;
+    color: white ;
+    font-size: 20px ;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: white;
+    color:rgb(5, 68, 104);
+}
+
+
+
+		.column1{
+			width: 30%;
+			float: left;
+
+
+		}
+		.column2{
+			float: left;
+			width: 60%;
+			margin-left: 2%;
+			height: 700px;
+		}
+
+
+.wrapper{
+    padding-top: 10px;
+}
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+
+    left: 0;
+    width: 290px;
+    height: 450px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.sidebar ul{
+	list-style-type: none;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before{
+    display: block;
+}
+
+
+
+
+.slider{
+			width: 800px;
+			height: 500px;
+			border-radius:5px;
+			overflow: hidden;
+		}
+		.slides{
+			width: 600%;
+			height: 500px;
+			display: flex;
+
+		}
+		.slides input{
+			display: none;
+		}
+		.slide{
+			width:20%;
+			transition: 2s;
+		}
+		.slide img{
+			width: 800px;
+			height: 500px;
+		}
+		.navigation-manual{
+			position: absolute;
+			width: 800px;
+			margin-top: -40px;
+			display:flex;
+			justify-content:center;
+		}
+		.manual-btn{
+			border:2px solid #40D3DC;
+			padding: 5px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: 1s;
+		}
+		.manual-btn:not(:last-child){
+			margin-right:40px;
+		}
+		.manual-btn:hover{
+			background: #40D3DC;
+		}
+		#radio1:checked ~ .first{
+			margin-left:0;
+		}
+		#radio2:checked ~ .first{
+			margin-left:-20%;
+		}
+		#radio3:checked ~ .first{
+			margin-left:-40%;
+		}
+		#radio4:checked ~ .first{
+			margin-left:-60%;
+		}
+		.navigation-auto{
+			position: absolute;
+			display: flex;
+			width: 800px;
+			justify-content: center;
+			margin-top: 460px ;
+
+		}
+		.navigation-auto div{
+			border-radius: 2px solid ;
+			padding: 5px;
+			border-radius: 10px;
+			transition: 1s;
+		}
+		.navigation-auto div:not(:last-child){
+			margin-right: 46px;
+			margin-top: 1px;
+		}
+		#radio1:checked ~ .navigation-auto .auto-btn1{
+			background: #40D3DC;				
+		}
+		#radio2:checked ~ .navigation-auto .auto-btn2{
+			background: #40D3DC;				
+		}
+		#radio3:checked ~ .navigation-auto .auto-btn3{
+			background: #40D3DC;	
+		}
+		#radio4:checked ~ .navigation-auto .auto-btn4{
+			background: #40D3DC;	
+		}
+
+	</style>
+</head>
+<body>
+	<table height="100" >
+		<tr>
+			<th><img align="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnS1ySIfGrSRok73xU3C4Spe1hts75wTxUMA&usqp=CAU" width="80" height="80"  ></th>
+			<th><h1><I><strong><big>Sky Voyage</big></strong></h1></th></I>
+		</tr>
+	</table>
+
+	<div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="bookflights.html">Flights</a></li>
+            <li><a href="sign_up.html">SignUp</a></li>
+        </ul>
+    </div>
+
+
+
+	<div class="row">
+		<div class="column1">
+			<div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="bookflights.html" >
+                        
+                        <span class="item">Book Flights</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="offers.html">
+                        
+                        <span class="item">Offers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="roundtrip.html">
+                        
+                        <span class="item">Round Trip</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="oneway.html">
+                        
+                        <span class="item">One-way Trip</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        
+                        Back to Index page
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+		</div>
+		<div class="column2">
+			<div class="slider">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+
+
+		<div class="slide first">
+			<img src="2.jpg" height="500px" width="750px">
+		</div>
+		<div class="slide">
+			<img src="paris.jpeg" height="500px" width="750px">
+		</div>
+		<div class="slide">
+			<img src="3.jpg" height="500px" width="800px">
+		</div>
+		<div class="slide">
+			<img src="4.jpg" height="500px" width="800px">
+		</div>
+
+		<div class="navigation-auto">
+			<div class="auto-btn1"></div>
+			<div class="auto-btn2"></div>
+			<div class="auto-btn3"></div>
+			<div class="auto-btn4"></div>
+		</div>
+	</div>
+	<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var counter=1;
+		setInterval(function(){
+			document.getElementById('radio'+ counter).checked=true;
+			counter++;
+			if(counter >4){
+				counter=1;
+			}
+		},5000);
+	</script>
+	</div>
+</div>
+</body>

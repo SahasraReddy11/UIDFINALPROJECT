@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+
+}
+.container .top
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding:40px;
+    padding-bottom: 0;
+}
+.container .top .imgbox
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgbox .box{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgbox .box img{
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+}
+.container .top .ProfileText{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .top .ProfileText h3{
+    font-size: 2em;
+    letter-spacing: 0.025em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color:#333;
+}
+
+.container .content{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+.container .content h3{
+    border-left:4px solid #ff8bb3 ;
+    padding-left: 10px;
+    line-height:1em;
+    font-weight: 600;
+    color:#333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top:50px; 
+}
+.container .content ul{
+    position:relative;
+    margin: 10px 0;
+}
+.container .content ul li{
+    list-style:none;
+    margin: 20px;
+    line-height: 1em;
+    color:#333;
+    cursor: pointer;
+    display: flex;
+}
+.container .content ul li ion-icon{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color:#3590d2;
+}
+.container .content ul.education li{
+    flex-direction:column ;
+    margin:25px 0;
+}
+
+h4{
+    color: #3590d2;
+    font-weight: 500;
+    margin: 5px 0;
+}
+h6{
+    color: #666;
+    font-weight: 300;
+    line-height: 1.2em;
+    font-size:1em;
+}
+h5{
+    font-size: 1em ;
+    line-height: 1.2em;
+}
+.qualities li{
+    flex-direction:column;
+}
+.qualities li span{
+    color:#333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.qualities .percent{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px ;
+    display:block;
+    overflow:hidden;
+}
+.qualities .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background: #3590d2;
+}
+.container .content ul.skills{
+    position:relative;
+    display: grid;
+    grid-template-columns: 140px 100px 100px;
+    
+}
+.rightside{
+    padding-left: 15%;
+}
+a{
+    text-decoration: none;
+    color: #3590d2;
+}

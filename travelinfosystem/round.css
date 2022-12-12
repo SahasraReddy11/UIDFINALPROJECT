@@ -1,0 +1,118 @@
+.navbar ul{
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(5, 68, 104);
+}
+.navbar li{
+    float:left;
+}
+.navbar li a{
+    display: block;
+    color: white ;
+    font-size: 20px ;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: white;
+    color:rgb(5, 68, 104);
+}
+
+
+    .column1{
+      width: 30%;
+      float: left;
+
+
+    }
+    .column2{
+      float: left;
+      width: 65%;
+      margin-left: 2%;
+      height: 570px;
+    }
+
+
+.wrapper{
+    padding-top: 10px;
+}
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+
+    left: 0;
+    width: 290px;
+    height: 450px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.sidebar ul{
+  list-style-type: none;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before{
+    display: block;
+}
+
+
+.column2 {
+  
+    background-color: rgba(5, 68, 104, 0.12);
+
+  border-radius: 10px;
+  padding-right: 10px; 
+  padding-left:  10px; 
+  height: 500px;
+}
+
+.table table,
+.table td,
+.table tr {
+    padding: 12px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+}
+
+.table th {
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: rgb(5, 68, 104);
+    color: white;
+}
+.table td:hover {
+    background:rgb(5, 68, 104);
+    color: white;
+}
